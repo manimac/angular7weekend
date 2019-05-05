@@ -5,23 +5,26 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
 import { HeaderComponent } from './header.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router'; //Router module
 
+
+//start routing path
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   ];
+//End routing path
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    HeaderComponent
+    AboutComponent, //New component
+    HeaderComponent //New component
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes) //Import the router module for defines the route
   ],
   providers: [],
   bootstrap: [AppComponent]
