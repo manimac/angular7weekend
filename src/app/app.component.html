@@ -6,6 +6,7 @@
 </style>
 <header-root></header-root> <!-- Added as directive for header -->
 <div>
+    <custdirective></custdirective>
   {{title}}
   {{name}}
   <button (click)="save()" [ngClass]="{'active':showClass}">Click me</button>
@@ -18,7 +19,7 @@
     <th>Age</th>
   </thead>
   <tr *ngFor="let stu of students">
-    <td>{{stu.name}}</td>
+    <td>{{stu.name|customfilter}}</td>
     <td>{{stu.age}}</td>
   </tr>
 </table>

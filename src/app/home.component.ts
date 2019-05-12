@@ -3,7 +3,7 @@ import { customService } from './custom.service';
 
 @Component({
   selector: 'app-root',
-  template: '<div>Home component{{name}}</div>',
+  template: '<custdirective></custdirective><div>Home component{{name}}</div>',
   providers : [customService]
 })
 export class HomeComponent {
